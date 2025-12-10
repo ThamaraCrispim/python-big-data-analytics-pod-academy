@@ -193,7 +193,5 @@ Inclui recomendações sobre:
 - comentários  
 - organização do código  
 
-Seguir o PEP8 ajuda a manter o código limpo, legível e fácil de manter.
 
----
 
