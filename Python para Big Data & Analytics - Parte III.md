@@ -1,22 +1,52 @@
 # Aula 3 – Python (Hands-on) 🐍💻
 
-Nesta aula, focamos em **funções** e **manipulação de dados** com Python, utilizando bibliotecas como **Pandas** para análise inicial de dados.
+Aula prática com foco em funções, estruturação de código e manipulação inicial de dados em Python.
 
-## 📌 Principais Conceitos
+## Exemplos Trabalhados
 
-- **Funções**: Definição de funções, parâmetros, retorno e escopo de variáveis.
-- **Estruturas de Repetição**: Utilização de `for` e `while` para laços de repetição.
-- **List Comprehension**: Sintaxe compacta para criação de listas.
-- **Bibliotecas**: Importação de módulos como `math` e `pandas`.
-- **Pandas**: Criação de `DataFrame`, operações básicas como `head()`, `describe()`, e manipulação de colunas.
+### Funções
+    def soma(a, b):
+        return a + b
 
----
+    def media(valores):
+        return sum(valores) / len(valores)
 
-## 🎯 Objetivo da Aula
+### Parâmetros e Escopo
+    x = 10
 
-- Aprender a estruturar código com **funções**.
-- Introdução ao uso de **Pandas** para análise de dados.
-- Manipulação de **DataFrames** e **aplicação de funções** em dados.
+    def teste():
+        x = 5
+        return x
 
----
+### Estruturas de Repetição
+    for i in range(5):
+        print(i)
+
+    contador = 3
+    while contador > 0:
+        contador -= 1
+
+### List Comprehension
+    pares = [n for n in range(10) if n % 2 == 0]
+
+### Importação de Bibliotecas
+    import pandas as pd
+    import math
+
+### Pandas – DataFrame
+    df = pd.DataFrame({
+        "nome": ["Ana", "João", "Maria"],
+        "idade": [23, 30, 27]
+    })
+
+### Operações com Dados
+    df.head()
+    df.describe()
+
+    df[df["idade"] > 25]
+
+    df["idade_dobrada"] = df["idade"].apply(lambda x: x * 2)
+
+> Aula desenvolvida em notebook (.ipynb), com abordagem totalmente prática (hands-on).
+
 
